@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SoundMoneyCoin Vault</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+
+    window.addEventListener('load', function() {
+
+      // Checking if Web3 has been injected by the browser (Mist/MetaMask)
+      if (typeof web3 !== 'undefined') {
+        // Use Mist/MetaMask's provider
+        web3js = new Web3(web3.currentProvider);
+      } else {
+        console.log("NO METAMASK.");
+        document.getElementById('warning').innerHtml = 'Please download and install Metamask: <a href="https://metamask.io/">https://metamask.io/</a>';
+      }
+    });
+    </script>
+
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">SoundMoneyCoin</h1>
+          <div id="warning"></div>
+          <hr/>
+        </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+           <p> SoundMoneyCoin (SOV Coin) is a sound money and a secure store of value. Supported browsers are Chrome and Brave with the <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">Metamask extension</a>. For detailed instructions on minting check out the <a href="https://medium.com/@soundmoneycoin/how-to-mine-sov-coin-from-your-browser-35d73eec3d87">mining guide</a>. 
+           More information on the <a href="https://www.soundmoneycoin.io">Website</a> and on <a href="https://bitcointalk.org/index.php?topic=5117492">Bitcointalk</a>.</p>
+          
+          <p>If you're too lazy to mint SOV yourself, simply
+            <a href="https://forkdelta.app/#!/trade/0x010589b7c33034b802f7dba2c88cc9cec0f46673-ETH">buy some on ForkDelta</a> instead.
+          </p>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+
+      <div id="petsRow" class="row">
+        <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" style="text-align: center">My Wallet</h3>
+            </div>
+            <div class="panel-body"  style="text-align: center">
+              <h4>Balance</h4>
+              <img src="soundmoneycoin-icon.png"/> <span id="TTBalance"></span> SOV<br/><br/>
+              <button class="btn btn-primary" id="mintButton" type="button">Mint</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2"  style="text-align: center">
+          <a href="https://www.soundmoneycoin.io">Web</a> 
+          &nbsp;&middot;&nbsp;<a href="https://github.com/soundmoneycoin">Github</a>
+           &nbsp;&middot;&nbsp;<a href="https://etherscan.io/address/0x010589b7c33034b802f7dba2c88cc9cec0f46673">Etherscan</a>
+           &nbsp;&middot;&nbsp;<a href="https://discord.gg/CaRXygb">Discord</a>
+           &nbsp;&middot;&nbsp;<a href="https://bitcointalk.org/index.php?topic=5117492.0">BitcoinTalk</a>
+           &nbsp;&middot;&nbsp;<a href="https://twitter.com/soundmoneycoin">Twitter</a>
+           &nbsp;&middot;&nbsp;<a href="https://medium.com/@soundmoneycoin/how-to-mine-sov-coin-from-your-browser-35d73eec3d87">Howto</a>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-sm-push-2"  style="margin-top:20px; margin-bottom: 20px; text-align: center; font-size: 20pt">
+           <a href="https://forkdelta.app/#!/trade/0x010589b7c33034b802f7dba2c88cc9cec0f46673-ETH">Trade on ForkDelta</a>
+        </div>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2" style="text-align: center">
+           <p><img src="hans.jpg" width="200px"/></p>
+           <p>"Sound money and free banking are not impossible; they are merely illegal." -- Hans F. Sennholz (historical quote)</p>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+
+</html>
