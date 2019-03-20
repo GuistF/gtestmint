@@ -1,7 +1,5 @@
 # soundmoneycoin-FrontendMinter
 
-.. image:: https://i.imgur.com/drEOQGh.png
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
+<img src="https://i.imgur.com/drEOQGh.png" alt="My cool logo"/>
+
 
