@@ -1,4 +1,4 @@
-# soundmoneycoin-FrontendMinter
+# Sound Money Coin-Frontend Minter
 Sov minter it's available on <a href="https://mint.soundmoneycoin.io/">Mint.soundmoneycoin.io</a>
 
 ### Frontend minter preview
