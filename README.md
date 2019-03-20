@@ -1,0 +1,3 @@
+# gtestmint
+
+#soundmoneycoin-FrontendMinter
